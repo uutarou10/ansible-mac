@@ -1,0 +1,23 @@
+- name: 'Dock tilesize'
+  osx_defaults:
+    domain: 'com.apple.dock'
+    key: 'tilesize'
+    type: 'float'
+    value: 20
+  notify: 'restart dock'
+
+- name: 'Dock orientation'
+  osx_defaults:
+    domain: 'com.apple.dock'
+    key: 'orientation'
+    type: 'string'
+    value: 'left'
+  notify: 'restart dock'
+
+- name: 'Mission controlの並べ替え無効化'
+  osx_defaults:
+    domain: 'com.apple.dock'
+    key: 'mru-spaces'
+    type: 'int'
+    value: 0
+  notify: 'restart dock'

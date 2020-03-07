@@ -1,0 +1,24 @@
+install_packages:
+  brew:
+    - cloc
+    # - fish
+    - git
+    - jq
+    - mysql
+    # - peco
+    - tig
+    - tree
+    - wget
+  cask:
+    - 1password
+    - coteditor
+    - keepingyouawake
+    - slack
+    - kindle
+    - shiftit
+    - google-chrome
+    - android-studio
+    - docker
+    - iterm2
+    - postman
+    - visual-studio-code

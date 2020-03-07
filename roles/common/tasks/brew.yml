@@ -1,0 +1,10 @@
+- name: 'install dev tools (brew)'
+  homebrew:
+    update_homebrew: true
+    name: "{{ install_packages.brew }}"
+
+- name: 'install gui tools(brew cask)'
+  homebrew_cask:
+    name: "{{ item }}"
+    state: 'present'
+  with_items: "{{ install_packages.cask }}"
