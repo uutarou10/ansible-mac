@@ -21,3 +21,10 @@
     type: 'int'
     value: 0
   notify: 'restart dock'
+
+- name: 'ライブ変換無効化'
+  osx_defaults:
+    domain: 'com.apple.inputmethod.Kotoeri'
+    key: JIMPrefLiveConversionKey
+    type: 'bool'
+    value: false
